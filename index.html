@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#1890ff" />
+
+  <title>Uxkode Product Addons for WooCommerce Docs</title>
+  <meta name="description" content="Documentation for Uxkode Product Addons for WooCommerce" />
+
+  <link rel="icon" href="" />
+  <link rel="stylesheet" href="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/css/style.css" />
+
+  <script>
+    (function () {
+      "use strict";
+
+      try {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const dark = stored ? stored === "dark" : prefersDark;
+
+        if (dark) {
+          document.documentElement.classList.add("dark");
+        }
+        
+      } catch (error) {
+        // Fail silently if localStorage or matchMedia is blocked
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" role="banner">
+    <div class="logo-area">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">
+        ☰
+      </button>
+
+      <a href="#" class="site-logo">
+        <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-product-addons-for-woocommerce-logo.svg" alt="Uxkode Product Addons Logo" class="logo logo-light">
+        <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-product-addons-for-woocommerce-logo-white.svg" alt="Uxkode Product Addons Logo Dark" class="logo logo-dark">
+      </a>
+    </div>
+
+    <div class="search">
+      <label class="sr-only" for="docSearch">Search</label>
+      <input id="docSearch" type="search" placeholder="Search documentation…" autocomplete="off" />
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+      <a class="button primary" href="#getting-started">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside id="sidebar" class="sidebar" role="navigation" aria-label="Sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-section">
+        <div class="sidebar-title">Overview</div>
+        <ul>
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#key-features">Key Features</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Usage</div>
+        <ul>
+          <li><a href="#product-addons">Product Add-Ons</a></li>
+          <li><a href="#custom-buttons">Custom Buttons</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Reference</div>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#troubleshooting">Troubleshooting</a></li>
+          <li><a href="#changelog">Changelog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="content" class="content" role="main">
+    <article class="prose">
+
+      <!-- INTRO -->
+      <h1>Uxkode Product Addons for WooCommerce</h1>
+      <p class="lead">
+        Uxkode Product Addons is a lightweight and developer-friendly plugin that helps you enhance your WooCommerce store with two powerful features — customizable <strong>Product Add-Ons</strong> and flexible <strong>Custom Buttons</strong>.
+      </p>
+
+      <!-- GETTING STARTED -->
+      <section id="getting-started">
+        <h2>Getting Started</h2>
+        <p>Follow these steps to install and activate the plugin:</p>
+        <ol>
+          <li>Download and install the plugin from <a href="https://wordpress.org/plugins/" class="ahref">WordPress.org</a> or upload the ZIP file via <strong>Plugins → Add New</strong>.</li>
+          <li>Activate the plugin from your WordPress dashboard.</li>
+          <li>Go to <strong>Uxkode Addons Dashboard</strong> to manage Product Add-Ons, Custom Buttons, and all plugin settings from one dashboard.</li>
+        </ol>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-dashboard-img.webp" alt="Uxkode Addons Dashboard" class="uxkode-img">
+          <figcaption>Manage all features and settings from one dashboard!</figcaption>
+        </figure>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="key-features">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Manage Product Add-Ons from a dedicated <strong>Product Add-Ons</strong> admin dashboard.</li>
+          <li>Create Add-Ons with multiple field types (text, number, textarea).</li>
+          <li>Assign available Add-Ons to products via the <strong>Product Edit → Product Add-Ons</strong> tab.</li>
+          <li>Enable or disable Add-Ons per product. When enabled and assigned, they will display on the product page.</li>
+          <li>Customize the appearance of Custom Buttons globally from the <strong>Custom Buttons</strong> admin dashboard.</li>
+          <li>Enable or disable the Custom Buttons feature per product and choose between single or dual call-to-action buttons.</li>
+          <li>Set button label, URL, and target (same tab or new tab) directly from the <strong>Product Edit → Custom Buttons</strong> tab.</li>
+          <li>Built with performance in mind — clean, lightweight, and developer-friendly.</li>
+        </ul>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-addons-features-displayed-img.webp" alt="Displaying Uxkode Product Addons Features" class="uxkode-img">
+          <figcaption>Displaying Uxkode Product Addons Features for Frontend Users.</figcaption>
+        </figure>
+      </section>
+
+      <!-- REQUIREMENTS -->
+      <section id="requirements">
+        <h2>Plugin Mimumum Requirements</h2>
+        <ul>
+          <li>WordPress 5.8 or later</li>
+          <li>WooCommerce 6.0 or later</li>
+          <li>PHP 7.4 or later</li>
+        </ul>
+      </section>
+      <div class="uxkode-spacer"></div>
+
+      <!-- PRODUCT ADD-ONS -->
+      <section id="product-addons">
+        <h2>Configure Product Add-Ons</h2>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-product-addons-img.webp" alt="Product Add-Ons Dashboard" class="uxkode-img">
+          <figcaption>Product Add-Ons Admin dashboard to manage all Add-Ons.</figcaption>
+        </figure>
+        <p>To create and manage product Add-Ons:</p>
+        <ol>
+          <li>Go to <strong>Uxkode Addons Dashboard → Product Add-Ons</strong>.</li>
+          <li>Fill Up the Add-Ons form with the necessary details and click 'Create Add-On'</li>
+          <li>Assign custom available Add-Ons to specific WooCommerce products from (Product Edit screen → Product Add-Ons tab).</li>
+          <li>Publish New Product or Update changes — Add-Ons will automatically appear on the single product page.</li>
+        </ol>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/product-addons-data-tab.webp" alt="Product Add-Ons Data Tab Image" class="uxkode-img">
+          <figcaption>Selecting available Add-Ons from the Product Add-Ons Data Tab.</figcaption>
+        </figure>
+      </section>
+      <div class="uxkode-spacer"></div>
+
+      <!-- CUSTOM BUTTONS -->
+      <section id="custom-buttons">
+        <h2>Custom Buttons</h2>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/uxkode-custom-buttons-img.webp" alt="Custom Buttons Dashboard Image" class="uxkode-img">
+          <figcaption>Apply Custom styles from the Custom Buttons Admin Dashboard.</figcaption>
+        </figure>
+        <p>To enable and manage custom buttons for a product:</p>
+        <ol>
+          <li>Go to <strong>Uxkode Addons Dashboard → Custom Buttons</strong>.</li>
+          <li>Add custom styles and hover effects from the Custom Buttons admin dashboard.</li>
+          <li>Edit the desired product and go to <strong>Custom Buttons tab</strong> to enable/disable the feature and choose between <strong>Single Button</strong> or <strong>Dual Buttons</strong>. Add button details as needed.</li>
+          <li>Publish New Product or Update changes — your custom buttons will now appear on the single product page.</li>
+        </ol>
+        <figure>
+          <img src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/images/custom-buttons-data-tab.webp" alt="Custom Buttons Data Tab Image" class="uxkode-img">
+          <figcaption>Assigning Custom Buttons from the Custom Buttons Data Tab.</figcaption>
+        </figure>
+      </section>
+      <div class="uxkode-spacer"></div>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Will this make my site slower?</summary>
+          <p>No. Uxkode Product Addons is built for performance and only loads assets where they are needed. No unnecessary CSS or JS files are added to your site.</p>
+        </details>
+        <details>
+          <summary>Do Product Add-Ons work with variable products?</summary>
+          <p>Yes! Product Add-Ons work perfectly with both simple and variable products, so you can easily collect customer inputs and offer extra customization options.</p>
+        </details>
+        <details>
+          <summary>Can I enable Add-Ons for specific products only?</summary>
+          <p>Absolutely. You can enable Add-Ons on a per-product basis and assign specific ones from the <strong>Product Edit → Product Add-Ons</strong> tab.</p>
+        </details>
+        <details>
+          <summary>Can I customize the look of the buttons?</summary>
+          <p>Yes! You can style both Single and Dual Buttons directly from the <strong>Uxkode Addons Dashboard → Custom Buttons</strong>. Advanced users can also override styles with custom CSS for complete control.</p>
+        </details>
+        <details>
+          <summary>Can I add two buttons to a single product?</summary>
+          <p>Yes. You can display dual buttons on a product and configure their text, URL, and open behavior (same tab or new tab) from the Product Data tab.</p>
+        </details>
+      </section>
+      <div class="uxkode-spacer"></div>
+
+      <!-- TROUBLESHOOTING -->
+      <section id="troubleshooting">
+        <h2>Troubleshooting</h2>
+        <div class="callout warning">
+          <strong>Tip:</strong> If Add-Ons or Custom Buttons do not appear, clear your site cache and confirm that the feature is enabled for that product.
+        </div>
+        <ul>
+          <li>Enable <code>WP_DEBUG</code> in <code>wp-config.php</code> to check for errors.</li>
+          <li>Temporarily deactivate other plugins to rule out conflicts.</li>
+          <li>Ensure WooCommerce is active and updated to the latest version.</li>
+        </ul>
+      </section>
+      <div class="uxkode-spacer"></div>
+
+      <!-- CHANGELOG -->
+      <section id="changelog">
+        <h2>Changelog</h2>
+        <ul class="changelog">
+          <li><span class="badge success">1.0.0</span> Initial release — includes Product Add-Ons and Custom Buttons.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <div class="uxkode-spacer"></div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> Uxkode Product Addons for WooCommerce. Built with ❤️ by Uxkode.</p>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <script src="https://uxkode.github.io/uxkode-product-addons-for-woocommerce/assets/js/script.js"></script>
+</body>
+</html>
