@@ -3,7 +3,7 @@
 This repository contains the **Official Documentation** for the **Uxkode Product Addons for WooCommerce** plugin.  
 It serves as a central hub for guides, references, and resources to help users and developers get the most out of the plugin.
 
-**Live URL: https://uxkode.github.io/uxkode-product-addons-for-woocommerce/**
+**Live URL: https://uxkode.github.io/docs-uxkode-product-addons-for-woocommerce/**
 
 
 ## 📚 What’s Inside
